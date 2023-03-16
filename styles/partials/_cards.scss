@@ -1,0 +1,80 @@
+.div{
+    display: flex;
+    justify-content: center;
+    button{
+      margin-top: 5px;
+    }
+}
+
+#goodCharacterList,
+#badCharacterList{
+    display: flex;
+    margin-top: 110px;
+    li {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 6px;
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(240, 248, 255, 0.93);
+        box-shadow: 0px 1px 15px 0px #333;
+    }
+}
+
+p.green {
+    color: green;
+  }
+  
+  p.red {
+    color: red;
+  }
+
+  img{
+    height: 250px;
+    width: 200px;
+  }
+  .messageBox{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid #333;
+    background-color: aliceblue;
+    border-radius: 0 10px;
+    
+    width: 300px;
+}
+.messageBox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 26px;
+}
+p{
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+}
+span{
+  font-size: 16px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #333; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

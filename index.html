@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="legoLogo"><img id="logo" src="assets/img/pngwing.com.png" alt=""></div>
+    <div class="header">
+        <select name="good" id="list1">
+            <option value=""selected hidden>Select Character</option>
+            <option value="Qui-Gon Jinn">Qui-Gon Jinn</option>
+            <option value="Leia Organa">Leia Organa</option>
+            <option value="Obi-Wan Kenobi">Obi-Wan Kenobi</option>
+            <option value="Yoda">Yoda</option>
+            <option value="Chewbacca">Chewbacca</option>
+            <option value="Ackbar">Ackbar</option>
+            <option value="Padmé Amidala">Padmé Amidala</option>
+        </select>
+        <select name="bad" id="list2">
+            <option value=""selected hidden>Select Character</option>
+            <option value="Jabba Desilijic Tiure">Jabba Desilijic Tiure</option>
+            <option value="Palpatine">Palpatine</option>
+            <option value="Darth Maul">Darth Maul</option>
+            <option value="Dooku">Dooku</option>
+            <option value="Grievous">Grievous</option>
+            <option value="Greedo">Greedo</option>
+            <option value="IG-88">IG-88</option>
+        </select>
+        <button id="dataBtn">Get Data</button>
+        <button id="compare">Compare Characters</button>
+        <button id="compareMovies">Compare Movies</button>
+    </div>
+    <div class="wrapper">
+
+        <div class="div">
+            <ul id="goodCharacterList"></ul>
+        <ul id="badCharacterList"></ul>
+        </div>
+        <div class="messageBox">
+        </div>
+    </div>
+    
+    <script src="Javascript/classes.js"></script>
+    <script src="Javascript/main.js"></script>
+</body>
+</html>
